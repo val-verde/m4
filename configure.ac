@@ -132,7 +132,7 @@ if test "$gl_gcc_warnings" = yes; then
   AH_VERBATIM([FORTIFY_SOURCE],
   [/* Enable compile-time and run-time bounds-checking, and some warnings,
       without upsetting newer glibc. */
-   #if !defined __MINGW64__ && defined __OPTIMIZE__ && __OPTIMIZE__
+   #if !defined __MINGW32__ && defined __OPTIMIZE__ && __OPTIMIZE__
    # define _FORTIFY_SOURCE 2
    #endif
   ])
